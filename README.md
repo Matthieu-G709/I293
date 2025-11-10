@@ -1,2 +1,2 @@
 # I293
-dossier de cours html css
+Auteur : Matthieu-Geronimo Kaufmann
