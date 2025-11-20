@@ -3,14 +3,27 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <style>
+            
+            article {
+                border: 2px solid black ;
+                border-style: outset black white;
+                border: width 2px;
+                width: 70%;
+                height: 45%;
+
+            }
             table, th, td {
                 border: 2px solid black;
                 border-collapse: collapse;
+                width: 100%;
+                height: 100%;
+                
             }
+            
             td {
-                width: 150px;
+                width: 30px;
                 height: 50px;
-                text-align: center; /* Centre le texte du paragraphe */
+
             }
         </style>
         <title>Matthieu-Geronimo Kaufmann</title>
@@ -20,7 +33,7 @@
             <article>
                 <table style="text-align: center;">
                     <tr class="row-1">
-                        <td>colonne aligner à gauche</td>
+                        <td:>colonne aligner à gauche</td>
                         <td>collonne 2 centrer</td>
                         <td>collonne 3 aligner à droite</td>
                     </tr>
@@ -38,16 +51,16 @@
                         <td colspan="2">2 cellule fuionnée(sur la même ligne)</td>
                     </tr>
                     <tr class="row-5">
-                        <td></td>
-                        <td></td>
-                        <td rowspan="2"></td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                        <td rowspan="2">2 Cellule fusionnées(par la même colonne)</td>
                     </tr>
                     <tr class="row-6">
-                        <td></td>
-                        <td></td>
+                        <td>Cellule 4</td>
+                        <td>Cellule 5</td>
                     </tr>
                     <tr class="row-7">
-                        <td colspan="3"></td>
+                        <td colspan="3">Cellule 4</td>
                     </tr>
                 </table>
             </article>
