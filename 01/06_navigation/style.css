@@ -1,0 +1,55 @@
+/* ICT-293 - Exercice Navigation - Départ */
+ body {
+          font-family: Arial;
+          margin:0px;
+          padding: 20px 0px 0px 0px;
+          font-size: 13px;
+          text-align: center;
+          background: #E3CAA1;       
+        }
+#nav {
+		/* Bandeau blanc de navigation*/
+        width: 100%;
+        background-color: white;
+        }
+        
+ul {
+		/* Alignement à gauche*/
+		/* Marges Int. */
+        padding: 15px 4px 17px 0;
+		/* Enlever puces */     
+        list-style: none;
+        }
+
+ ul li {            
+          /* Mettre en ligne par branche principale */
+          display: inline-block;
+          /* Positionnement + Marges Int. */
+          position: relative;
+          padding: 15px 20px;
+		  /* Etc. */
+       }
+ul li ul {
+		/* Cacher les sous-menus */
+        display: none;
+		/* Affichage en bas des sous-menus*/
+		/* Positionnement dans l'axe*/
+        }
+ul li:hover/* Mouvement souris */ {
+		/* Montrer les sous-menus (souris) */
+		background: #555;
+		color: #fff;
+        }
+ul li ul li:hover/* Mouvement souris */ {
+		background: #666;
+		}
+ul li:hover/* Mouvement souris */ ul {
+          display: block;    
+        }       
+ul li ul li { 
+		background: #a0938b;
+		color: #fff;
+		/* Afficher les sous-menus en blocs */
+        display: block;
+        }
+
