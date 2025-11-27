@@ -70,3 +70,76 @@ ul li{
 a {
 	color:#FFFFFF;
 }
+#top{
+	
+	#nav {
+		/* Bandeau blanc de navigation*/
+        width: 100%;
+        background-color: white;
+        }
+        
+ul {
+		/* Alignement à gauche*/
+		/* Marges Int. */
+        padding: 15px 4px 17px 0;
+		/* Enlever puces */     
+        list-style: none;
+        }
+
+ ul li {            
+          /* Mettre en ligne par branche principale */
+          display: inline-block;
+          /* Positionnement + Marges Int. */
+          position: relative;
+          padding: 15px 20px;
+		  /* Etc. */
+       }
+ul li ul {
+		/* Cacher les sous-menus */
+        display: none;
+		/* Affichage en bas des sous-menus*/
+		/* Positionnement dans l'axe*/
+        }
+ul li:hover/* Mouvement souris */ {
+		/* Montrer les sous-menus (souris) */
+		background: #555;
+		color: #fff;
+        }
+ul li ul li:hover/* Mouvement souris */ {
+		background: #666;
+		}
+ul li:hover/* Mouvement souris */ ul {
+          display: block;    
+        }       
+ul li ul li { 
+		background: #a0938b;
+		color: #fff;
+		/* Afficher les sous-menus en blocs */
+        display: block;
+        /* Positionnement dans l'axe*/
+		padding:0;
+		left:0;
+        }
+ul li ul {/*Sous Menus*/
+		/* 4 Cacher les sous-menus */
+			display: none;
+		/* Affichage en bas des sous-menus*/
+		position:absolute;
+		top:46px;
+		width:200px;
+		/* Positionnement dans l'axe*/
+		padding:0;
+		left:0;
+        }
+ul li {   /*Menu*/         
+          /* 3 Mettre en ligne par branche principale */
+          display:inline-block;
+		  /* 8 Positionnement + Marges Int. */
+		  position:relative;
+		  padding:15px 20px;
+		  /* 11 Etc. */
+		  cursor:crosshair;
+		  margin-right:-4px;
+		  text-align:left;
+}
+}
