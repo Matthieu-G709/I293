@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+
+<!--cv_4-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Matthieu-Geronimo Kaufmann</title>
+		<link href="style.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<style>
 			/*ICT-293 - Exercice CV4 - CRT 13.11.2025*/
 * {
 	margin: 0;
@@ -172,3 +186,54 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+@media (max-width: 700px) {
+	section { padding: 0 12px; }
+	article { flex-direction: column; align-items: center; }
+	article img { width: 80%; height: auto; }
+	article > div { padding: 12px 0; }
+}
+		</style>
+				
+	<nav id="top">
+        
+		<ul>
+          <li><a href="cv_4.html">Accueil</a></li>
+          <li>
+            Projet
+            <ul>
+              <li>Frontend</li>
+              <li>Scripting</li>
+              <li>Database</li>
+			  <li>System</li>
+            </ul>
+          </li>
+          <li>Activiter
+              <ul>
+              <li><a href="#">Film/Series</a></li>
+              <li>Texte</li>      
+            </ul>
+          </li>
+          <li>Contact</li>
+        </ul> 
+		</nav> 
+		<header>
+			<div id="nav"></div>
+			<h1>Mes Films Préférés</h1>
+		</header>
+		
+		<section>
+			<article>
+				<img src="./img/FNaFMovieDatePoster.png" alt="Five Nights at Freddy's">
+				<div>
+					<h2>Five Nights at Freddy's</h2>
+					<strong>Genre</strong>
+					<p>Thriller, Horreur</p>
+					<strong>Description</strong>
+					<p>Un thriller horrifique captivant basé sur la célèbre série de jeux vidéo. Le film explore les mystères sombres d'une célèbre pizzéria abandonnée avec des twists inattendus.</p>
+				</div>
+			</article>
+		</section>
+			
+	</body>
+</html>

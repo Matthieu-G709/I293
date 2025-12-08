@@ -5,42 +5,193 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Matthieu-Geronimo Kaufmann</title>
-		<link href="style.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	</head>
 	<body>
+		<style>
+			/*ICT-293 - Exercice CV4 - CRT 13.11.2025*/
+body{
+	font-family:arial;
+	font-size:20px;
+	color:rgb(249,249,249);
+	background-color:rgb(3,3,45);
+}
+
+header{
+	width:800px;
+	margin:auto;                        /*  marge extérieure */
+	padding:20px;                       /*  padding intérieur */
+}
+
+h1{
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;        
+	color:rgb(1,128,231);
+}
+
+h2{/*Toutes les balises h2*/
+	font-family: "Lato", sans-serif; 
+	color:white;
+}
+article h2{/*Les balises h2 qui se trouvent dans <article>*/
+	color:rgb(0,27,73);
+}
+
+img{
+	width:150px;
+	display:cover;
+}
+
+section{
+	padding:10px;                       /*  padding intérieur de la section */
+	display:block;
+	width:620px;
+	margin:auto;
+}
+
+article{
+	display:inline-block;               /*  alignement des blocs sur une ligne */
+	vertical-align:top;                 /*  alignement des blocs sur le haut */
+	background-color:rgb(1,128,231);
+	border-top:5px solid grey;
+	border-radius:20px;
+	width:300px;
+	height:320px;
+	padding:20px;
+	margin:10px;
+}
+
+ol,ul {
+	padding-left:16px;                  /*  décalage a gauche des listes  */
+	border-top:1px solid black;			/* ligne au-dessus des listes */
+	padding-top:16px;
+}
+
+ol li{ 
+	margin-bottom:20px;                 /*  marge du bas uniquement  */
+	list-style:upper-roman;				/* https://www.w3schools.com/CSS/css_list.asp */
+}
+
+ul li{ 
+	margin-bottom:20px;                 
+	list-style:square;
+}
+
+a {
+	color:#FFFFFF;
+}
+#top{
+	
+	nav {
+		/* Bandeau blanc de navigation*/
+        width: 100%;
+        background-color: rgb(117, 157, 202);
+		margin: 0;
+		padding: 20px;
+        }
+        
+ul {
+		/* Alignement à gauche*/
+		/* Marges Int. */
+        padding: 15px 4px 17px 0;
+		/* Enlever puces */     
+        list-style: none;
+        }
+
+ ul li {            
+          /* Mettre en ligne par branche principale */
+          display: inline-block;
+          /* Positionnement + Marges Int. */
+          position: relative;
+          padding: 15px 20px;
+		  /* Etc. */
+       }
+ul li ul {
+		/* Cacher les sous-menus */
+        display: none;
+		/* Affichage en bas des sous-menus*/
+		/* Positionnement dans l'axe*/
+        }
+ul li:hover/* Mouvement souris */ {
+		/* Montrer les sous-menus (souris) */
+		background: #3b98a8;
+		color: #ffffff;
+        }
+ul li ul li:hover/* Mouvement souris */ {
+		background: #1d7483;
+		}
+ul li:hover/* Mouvement souris */ ul {
+          display: block;    
+        }       
+ul li ul li { 
+		background: #3b98a8;
+		color: #fff;
+		/* Afficher les sous-menus en blocs */
+        display: block;
+        /* Positionnement dans l'axe*/
+		padding:10px;
+		margin: 0px;
+		left:0;
+        }
+ul li ul {/*Sous Menus*/
+		/* 4 Cacher les sous-menus */
+			display: none;
+		/* Affichage en bas des sous-menus*/
+		position:absolute;
+		top:46px;
+		width:200px;
+		/* Positionnement dans l'axe*/
+		padding:0;
+		left:0;
+        }
+ul li {   /*Menu*/         
+          /* 3 Mettre en ligne par branche principale */
+          display:inline-block;
+		  /* 8 Positionnement + Marges Int. */
+		  position:relative;
+		  padding:15px 20px;
+		  /* 11 Etc. */
+		  cursor:crosshair;
+		  margin-right:-4px;
+		  text-align:left;
+}
+}
+		</style>
 				
+	<nav id="top">
+        <h1>Film préférer</h1>
+		<ul>
+          <li><a href="cv_4.html">Accueil</a></li>
+          <li>
+            Projet
+            <ul>
+              <li>Frontend</li>
+              <li>Scripting</li>
+              <li>Database</li>
+			  <li>System</li>
+            </ul>
+          </li>
+          <li>Activiter
+              <ul>
+              <li><a href="filmnseries_4.html">Film/Series</a></li>
+              <li>jeux vidéo</li>      
+            </ul>
+          </li>
+          <li>Contact</li>
+        </ul> 
+		</nav> 
 		<header>
+			<div id="nav"></div>
 				<h1>Matthieu-Geronimo Kaufmann</h1>
 				<h2>Fullstack application developer</h2>
 				<p><img src="./img/profil.png"></p>
 		</header>
 				
 		<section>
-			<article id="top">
-				  <div id="nav">
-        <ul>
-          <li>Accueil</li>
-          <li>
-            Produits
-            <ul>
-              <li>Web Design</li>
-              <li>Web Development</li>
-              <li>Illustrations</li>
-            </ul>
-          </li>
-          <li>Blog
-              <ul>
-              <li>Visuel</li>
-              <li>Texte</li>      
-            </ul>
-          </li>
-          <li>Contact</li>
-        </ul>
-       </div> 
-			</article>
+			
 			<article>
 				<h2>Mon expérience </h2>
 				<ol>
