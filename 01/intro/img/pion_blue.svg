@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pion bleu: anneau extérieur et disque intérieur -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fond transparent -->
+  <rect width="100%" height="100%" fill="none" />
+  <!-- Anneau extérieur -->
+  <circle cx="100" cy="100" r="95" fill="#2f3ba0" stroke="#000" stroke-width="2" />
+  <!-- Disque intérieur -->
+  <circle cx="100" cy="100" r="65" fill="#4b6cff" stroke="#000" stroke-width="2" />
+</svg>
