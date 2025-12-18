@@ -1,0 +1,48 @@
+<html>
+	<head>
+  <title> Rent A Cargo </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<!-- Page -->
+<div class="site">
+
+	<!-- Entête -->
+	<header>
+		<div id="logo">logo</div>
+		<div id="menu">
+			<div class="lien">menu1</div>
+			<div class="lien">menu2</div>
+			<div class="lien">menu3</div>
+			<div class="lien">menu4</div>
+		</div>
+	</header>
+
+	<!-- Bandeau -->
+	<div id="slider">slider</div>
+
+	<!-- Produits -->
+	<div id="groupe_produits">
+		<div class="produit">produit 1</div>
+		<div class="produit">produit 2</div>
+		<div class="produit">produit 3</div>
+		<div class="produit">produit 4</div>
+	</div>
+
+	<!-- News/Inscription -->
+	<div id="groupe_news_form">
+		<div id="news">news</div>
+		<div id="formulaire">inscription</div>
+	</div>
+
+	<!-- Pied -->
+	<footer>footer</footer>
+
+</div>
+
+	</body>
+
+</html>

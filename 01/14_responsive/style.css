@@ -1,0 +1,199 @@
+    
+
+
+
+
+/*
+   Zone générale
+   */
+:root {
+    --muted: #e8e7e7;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: #f6f6f6;
+}
+
+
+*, *::before, *::after { box-sizing: border-box; }
+
+.site {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/*
+   Entête
+   */
+header {
+    background: #12403E;
+    height: 100px;
+    padding: 10px;
+    display: flex; 
+    align-items: center;
+}
+
+#logo {
+    display: inline-block;
+    width: 120px;
+    background: #F8CE3D;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+}
+
+#menu {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    width: calc(100% - 140px);
+    background: #DF6127;
+    padding: 10px;
+}
+
+.lien{
+    padding: 8px 12px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.lien:hover{
+    background-color: salmon;
+}
+
+/* 
+   grand bandeau
+    */
+#slider {
+    background: #58B7B8;
+
+    height: 360px;
+    min-height: 180px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/*
+   Produits
+   4 cases sur grand écran
+   */
+
+#groupe_produits {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produit {
+    flex: 0 0 calc(25% - 20px);
+ 
+    height: 260px;
+    background: #DF6127;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+/* 
+   News & Inscription
+*/
+#groupe_news_form {
+    margin-bottom: 20px;
+    display: flex; 
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#news,
+#formulaire {
+    flex: 1 1 48%;
+
+    min-height: 160px;
+    background: var(--muted);
+    color: #000000;
+    padding: 20px;
+}
+
+/* 
+   Pied de page
+    */
+footer {
+    background: #12403E;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* 
+   tablette / mobile
+    */
+@media (max-width: 900px) {
+
+    .produit {
+        width: 48%;
+        margin: 1%;
+   
+        min-height: 160px;
+    }
+
+    #news,
+    #formulaire {
+        display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #groupe_produits,
+    #groupe_news_form {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .produit,
+    #news,
+    #formulaire {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    /* une colonne (mobile) */
+    #logo,
+    #menu {
+        display: block;
+        width: 100%;
+    }
+
+    #slider {
+       
+        min-height: 180px;
+    }
+
+    .produit {
+        width: 100%;
+        margin: 0 0 10px 0;
+        float: none;
+    }
+}
+
